@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Legado do Incrível Hulk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        background-color: #167a16;
+        width: 90%;
+        max-width: 950px;
+        padding: 20px 40px 40px 40px;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    .nav-links {
+        margin-bottom: 20px;
+    }
+    
+    .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: 16px;
+        opacity: 0.9;
+    }
+    
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+    
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .text-content {
+        flex: 1;
+    }
+    
+    .text-content h1 {
+        color: #0c420c;
+        font-size: 32px;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+    
+    .text-content p {
+        color: #0c420c;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        text-align: justify;
+    }
+    
+    .image-container {
+        flex-shrink: 0;
+        position: relative;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .green-shadow-card {
+        background-color: #1bd01b;
+        border-radius: 30px;
+        padding: 0 25px 0 0;
+    }
+    
+    .green-shadow-card img {
+        background-color: #ffffff;
+        display: block;
+        width: 280px;
+        height: auto;
+        border-radius: 30px;
+        transform: translate(-15px, -15px);
+        object-fit: cover;
+    }
+    
+    @media (max-width: 768px) {
+        .content-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .image-container {
+            padding-right: 0;
+            margin-top: 20px;
+        }
+    }
+    </style>
+
+    <main class="container">
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Back</a>
+        </nav>
+
+        <div class="content-wrapper">
+            
+            <section class="text-content">
+                <h1>O Legado do Incrível Hulk!!</h1>
+                
+                <p>O Hulk é o alter ego gigante e esmagador do cientista Bruce Banner, que se transforma após ser exposto à radiação gama. Ativado pela raiva, ele possui força ilimitada e vive um conflito constante entre o intelecto de Banner e a fúria bruta do monstro.</p>
+                
+                <p>O Hulk é o resultado de um acidente com radiação gama que transformou o cientista Bruce Banner em um monstro de força física imbatível. Movido pela raiva, ele vive em um conflito eterno entre o intelecto humano e a fúria selvagem, lutando para ser aceito como herói em vez de monstro.</p>
+            </section>
+            
+            <div class="image-container">
+                <div class="green-shadow-card">
+                    <img src="" alt="O Incrível Hulk em posição de combate">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
