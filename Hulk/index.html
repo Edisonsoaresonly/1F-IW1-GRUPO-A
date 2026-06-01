@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Incrível Hulk - Home</title>
+    <link rel="stylesheet" href="estilo_home.css">
+</head>
+<body>
+
+    <style>
+
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+}
+
+.container {
+    background-color: #1b820b;
+    width: 1400px;
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: underline;
+}
+
+.main-frame {
+    background-color: #00e600;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame-title {
+    align-self: flex-start;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    object-fit: cover;
+    height: 180px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.gallery-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-frame {
+    background-color: #00e600;
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img {
+    width: 80%;
+    border-radius: 10px;
+    height: 80px;
+    object-fit: cover;
+}
+    </style>
+
+<div class="container">
+    <header class="navbar">
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+        </nav>
+        <h1 class="title">O Incrível Hulk</h1>
+        <div class="login-link">
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <main class="main-frame">
+        <span class="frame-title"></span>
+        <img src="hulk 2.png" alt="Hulk Principal" class="hulk 2">
+    </main>
+
+    <section class="gallery">
+        <div class="gallery-card">
+            <span class="frame-title"></span>
+            <div class="gallery-frame">
+                <img src="hulk 3.png" alt="Hulk 2" class="hulk 3">
+            </div>
+        </div>
+        <div class="gallery-card">
+            <span class="frame-title"></span>
+            <div class="gallery-frame">
+                <img src="hulk 4.png" alt="Hulk 3" class="hulk 4">
+            </div>
+        </div>
+        <div class="gallery-card">
+            <span class="frame-title"></span>
+            <div class="gallery-frame">
+                <img src="hulk 5.png" alt="Hulk 4" class="hulk 5">
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
