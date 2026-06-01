@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Login</title>
+    <style>
+        
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Caveat', cursive;
+        }
+        .container {
+            background-color: #1b820b;
+            width: 1000px;
+            height: 500px;
+            padding: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .home-link {
+            font-size: 28px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .home-link a {
+            color: white;
+            text-decoration: underline;
+        }
+        .header-title {
+            text-align: center;
+            color: white;
+            font-size: 42px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .form-box {
+            background-color: #00e600;
+            border-radius: 30px;
+            width: 70%;
+            margin: 0 auto;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            width: 60%;
+        }
+        .input-group label {
+            display: block;
+            color: white;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            height: 35px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 20px;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 40px;
+        }
+        .btn {
+            flex: 1;
+            height: 40px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-family: 'Caveat', cursive;
+            font-size: 26px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="home-link">
+        <a href="#">Home</a>
+    </div>
+    
+    <h1 class="header-title">Faça seu Login</h1>
+    
+    <div class="form-box">
+        <form>
+            <div class="input-group">
+                <label for="login">Login</label>
+                <input type="text" id="login">
+            </div>
+            
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+            </div>
+            
+            <div class="button-group">
+                <button type="button" class="btn">Cadastrar</button>
+                <button type="submit" class="btn">Logar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

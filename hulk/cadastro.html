@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Cadastro</title>
+    <style>
+        
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Caveat', cursive;
+        }
+        .container {
+            background-color: #1b820b;
+            width: 1100px;
+            height: 550px;
+            padding: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .home-link {
+            font-size: 28px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .home-link a {
+            color: white;
+            text-decoration: underline;
+        }
+        .header-title {
+            text-align: center;
+            color: white;
+            font-size: 42px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .form-box {
+            background-color: #00e600;
+            border-radius: 30px;
+            width: 75%;
+            margin: 0 auto;
+            padding: 20px 30px;
+            box-sizing: border-box;
+        }
+        .input-group {
+            margin-bottom: 10px;
+            width: 45%;
+        }
+        .input-group label {
+            display: block;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+        .input-group input {
+            width: 100%;
+            height: 25px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 15px;
+            padding: 0 12px;
+            box-sizing: border-box;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            gap: 50px;
+        }
+        .btn {
+            flex: 1;
+            height: 38px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-family: 'Caveat', cursive;
+            font-size: 26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="home-link">
+        <a href="#">Home</a>
+    </div>
+    
+    <h1 class="header-title">Faça seu Cadastro</h1>
+    
+    <div class="form-box">
+        <form>
+            <div class="input-group">
+                <label for="login">Login</label>
+                <input type="text" id="login">
+            </div>
+            
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+            </div>
+            
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            
+            <div class="button-group">
+                <button type="button" class="btn">Cancelar</button>
+                <button type="submit" class="btn">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
