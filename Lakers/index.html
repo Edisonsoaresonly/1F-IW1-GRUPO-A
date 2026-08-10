@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Los Angeles Lakers</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #111111;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #ffcc00;
+        }
+
+        /* ÁREA PRINCIPAL */
+        .pagina {
+            width: 100%;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        /* QUADRO ROXO */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 650px;
+
+            background-color: #5b2690;
+
+            border-radius: 18px;
+
+            position: relative;
+
+            padding: 25px 45px;
+        }
+
+        /* MENU SUPERIOR */
+        .menu {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 14px;
+        }
+
+        .menu a {
+            color: #d6a900;
+            text-decoration: underline;
+
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ffffff;
+        }
+
+        .menu-esquerda {
+            display: flex;
+            gap: 45px;
+        }
+
+        /* CONTEÚDO ESQUERDO */
+        .conteudo {
+            width: 55%;
+
+            text-align: center;
+
+            margin-top: 30px;
+        }
+
+        /* TÍTULO */
+        .titulo {
+            font-size: 43px;
+            line-height: 1.05;
+
+            font-weight: normal;
+
+            color: #f5c400;
+
+            text-shadow:
+                1px 1px 0 #000,
+                -1px -1px 0 #000;
+
+            letter-spacing: 1px;
+        }
+
+        /* FRASE */
+        .descricao {
+            margin-top: 15px;
+
+            font-family: "Trebuchet MS", Arial, sans-serif;
+
+            font-size: 17px;
+            font-weight: bold;
+
+            line-height: 1.35;
+
+            color: #ffd000;
+        }
+
+        /* ÁREA DA FOTO */
+        .foto-container {
+            width: 520px;
+            height: 400px;
+
+            margin: 45px auto 0;
+
+            padding: 10px;
+
+            border: 1px solid #32135c;
+            border-radius: 22px;
+
+            background-color: #632c99;
+
+            box-shadow:
+                inset 0 0 0 5px #9a55c8,
+        }
+
+        .foto-container img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            border-radius: 10px;
+
+            border: 1px solid #a35fd0;
+        }
+
+        /* ÁREA DO LOGO */
+        .logo-area {
+            position: absolute;
+
+            right: 45px;
+            top: 85px;
+
+            width: 300px;
+            height: 430px;
+
+            border-radius: 20px;
+
+            border: 9px solid #a35fd0;
+            background-color: #542485;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-area img {
+            width: 200px;
+            height: auto;
+
+            object-fit: contain;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 900px) {
+
+            .container {
+                min-height: auto;
+
+                padding: 25px;
+            }
+
+            .conteudo {
+                width: 100%;
+            }
+
+            .logo-area {
+                position: relative;
+
+                right: auto;
+                top: auto;
+
+                width: 100%;
+                height: 250px;
+
+                margin-top: 40px;
+            }
+
+            .foto-container {
+                max-width: 100%;
+                height: auto;
+                aspect-ratio: 520 / 320;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .pagina {
+                padding: 10px;
+            }
+
+            .container {
+                border-radius: 12px;
+                padding: 20px 15px;
+            }
+
+            .menu {
+                font-size: 11px;
+            }
+
+            .menu-esquerda {
+                gap: 15px;
+            }
+
+            .titulo {
+                font-size: 30px;
+            }
+
+            .descricao {
+                font-size: 14px;
+            }
+
+            .foto-container {
+                margin-top: 90px;
+            }
+
+            .logo-area {
+                height: 200px;
+            }
+
+            .logo-area img {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <section class="container">
+
+            <!-- MENU -->
+            <nav class="menu">
+
+                <div class="menu-esquerda">
+                    <a href="#">HOME</a>
+                    <a href="#">SOBRE A FRANQUIA</a>
+                </div>
+
+                <a href="#">CADASTRO&nbsp; / &nbsp;LOGIN</a>
+
+            </nav>
+
+
+            <!-- CONTEÚDO -->
+            <div class="conteudo">
+
+                <h1 class="titulo">
+                    LOS ANGELES<br>
+                    LAKERS
+                </h1>
+
+                <p class="descricao">
+                    O legado do Mamba vive em cada jogo, em cada<br>
+                    arremesso, em cada torcedor laker.
+                </p>
+
+
+                <!-- FOTO DO JOGO -->
+                <div class="foto-container">
+
+                    <img src="Imagem.jpg" alt="Jogo do Los Angeles Lakers">
+
+                </div>
+
+            </div>
+
+
+            <!-- LOGO -->
+            <div class="logo-area">
+
+                <img src="escudo.jpg" alt="Logo Los Angeles Lakers">
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
