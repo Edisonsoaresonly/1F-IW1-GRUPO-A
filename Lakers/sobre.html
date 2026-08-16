@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Angeles Lakers - Sobre a Franquia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a1a1a;
+      padding: 20px;
+    }
+
+    .card-container {
+      width: 100%;
+      max-width: 900px;
+      background-color: #FDB927;
+      color: #552583;
+      border-radius: 25px;
+      padding: 30px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .nav-left {
+      display: flex;
+      gap: 30px;
+    }
+
+    .navbar a {
+      color: #552583;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .left-section {
+      flex: 1.3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      line-height: 1.2;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      font-family: sans-serif;
+      font-weight: bold;
+      line-height: 1.4;
+      max-width: 460px;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-card {
+      width: 100%;
+      max-width: 300px;
+      height: 380px;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #481e72;
+    }
+
+    .logo-card img {
+      width: 90%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .footer-text {
+      text-align: right;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <header class="navbar">
+      <nav class="nav-left">
+        <a href="index.html">HOME</a>
+        <a href="sobre.html" class="active">SOBRE A FRANQUIA</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="left-section">
+        <h1>17 CAMPEONATOS E UMA HISTÓRIA INIGUALÁVEL. ISSO É LOS ANGELES LAKERS!</h1>
+        <p class="description">
+          O Los Angeles Lakers foi fundado em 1947 em Minneapolis e mudou-se para Los Angeles em 1960. Ao longo da história, tornou-se uma das equipes mais vitoriosas da NBA, com grandes jogadores como Magic Johnson, Kobe Bryant e LeBron James. A franquia soma 17 títulos da NBA e é reconhecida mundialmente por sua tradição e sucesso no basquete.
+        </p>
+      </section>
+
+      <section class="right-section">
+        <div class="logo-card">
+          <img src="escudo2.jpg" alt="Logo Los Angeles Lakers">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-text">
+      <span>LOS ANGELES LAKERS.COM</span>
+    </footer>
+  </div>
+</body>
+</html>
